@@ -1,0 +1,152 @@
+{
+  "id": "d597f72e-4f03-41cd-828c-16755782089d",
+  "version": "2.0",
+  "name": "latestpdf",
+  "url": "https://arxiv.org",
+  "tests": [{
+    "id": "d6df6cd7-e1dd-4797-b7ce-4539bffc7e46",
+    "name": "downloadpdflatest",
+    "commands": [{
+      "id": "c9248bfe-104b-4394-a1b4-b6a46057580b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdaf2be5-7eb7-45d2-a4be-1ea8038075e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "670x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ef26488-157a-47e5-b974-7f8dc56517eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-category",
+      "targets": [
+        ["id=search-category", "id"],
+        ["name=group", "name"],
+        ["css=#search-category", "css:finder"],
+        ["xpath=//select[@id='search-category']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/form/select", "xpath:idRelative"],
+        ["xpath=//form/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "806cbef9-bf25-4b58-b831-fc0f9d8a411e",
+      "comment": "",
+      "command": "select",
+      "target": "id=search-category",
+      "targets": [],
+      "value": "label=Computer Science"
+    }, {
+      "id": "bc41c162-bc23-499f-b211-a3afade5f64b",
+      "comment": "",
+      "command": "click",
+      "target": "id=adv-search-btn",
+      "targets": [
+        ["id=adv-search-btn", "id"],
+        ["css=#adv-search-btn", "css:finder"],
+        ["xpath=//input[@id='adv-search-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9de745c-1e81-4e70-acfc-b34f8a586afa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-pulled-right > a",
+      "targets": [
+        ["css=.is-pulled-right > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Advanced Search')])[2]", "xpath:link"],
+        ["xpath=//main[@id='main-container']/div[2]/form/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/search/advanced')])[2]", "xpath:href"],
+        ["xpath=//form/div[3]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9471729c-cd01-4ad3-8b88-aaa12426d021",
+      "comment": "",
+      "command": "click",
+      "target": "css=.column:nth-child(1) > .field:nth-child(1) label",
+      "targets": [
+        ["css=.column:nth-child(1) > .field:nth-child(1) label", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset/div[2]/div/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Computer Science (cs)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee430fa0-1535-4239-b18d-a495877f3356",
+      "comment": "",
+      "command": "click",
+      "target": "css=.field:nth-child(10) > .control",
+      "targets": [
+        ["css=.field:nth-child(10) > .control", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[7]/div", "xpath:idRelative"],
+        ["xpath=//div[7]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b30fe3c-cdd9-45f5-a7e6-20124a75b7c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=date-date_type-0",
+      "targets": [
+        ["id=date-date_type-0", "id"],
+        ["name=date-date_type", "name"],
+        ["css=#date-date_type-0", "css:finder"],
+        ["xpath=//input[@id='date-date_type-0']", "xpath:attributes"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[2]/fieldset[2]/div[7]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1738e26d-a25d-481e-bdaa-88378b57ec11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button:nth-child(3)",
+      "targets": [
+        ["css=.button:nth-child(3)", "css:finder"],
+        ["xpath=//main[@id='main-container']/div[2]/div[2]/div/div/form/section[3]/button", "xpath:idRelative"],
+        ["xpath=//section[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d13408a-1c54-44eb-917e-522a701195b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=pdf",
+      "targets": [
+        ["linkText=pdf", "linkText"],
+        ["css=.arxiv-result:nth-child(1) > .is-marginless span > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'pdf')]", "xpath:link"],
+        ["xpath=//main[@id='main-container']/div[2]/ol/li/div/p/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://arxiv.org/pdf/2402.19481')]", "xpath:href"],
+        ["xpath=//p/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'pdf')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31743a97-8194-41e6-b791-4dc8b4de2cb3",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b38b3458-25b1-4e36-92a7-04afdf744a62",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d6df6cd7-e1dd-4797-b7ce-4539bffc7e46"]
+  }],
+  "urls": ["https://arxiv.org/"],
+  "plugins": []
+}
